@@ -2,6 +2,7 @@
     "name": "got-scoreboard",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://joseph-passineau.github.io/got-scoreboard/",
     "dependencies": {
         "@githubprimer/octicons-react": "^8.3.0",
         "prettier": "^1.15.3",
