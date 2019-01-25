@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/6_armies.a78226ea.png"
   },
   {
-    "revision": "c4dfe4f3abfcd99e6ab7",
-    "url": "/got-scoreboard/static/css/main.43ba6d36.chunk.css"
+    "revision": "702ed4f1f7b4ba51e754",
+    "url": "/got-scoreboard/static/css/main.5d744f8c.chunk.css"
   },
   {
     "revision": "0676798f49b878a3759ba6d8402ff268",
     "url": "/got-scoreboard/static/media/wildlings_track.0676798f.png"
   },
   {
-    "revision": "bc6459ce05fbde8414a1",
-    "url": "/got-scoreboard/static/js/1.bc6459ce.chunk.js"
+    "revision": "a95cf8e49736e8ca50ca",
+    "url": "/got-scoreboard/static/js/1.a95cf8e4.chunk.js"
   },
   {
     "revision": "f733617affdb77426871",
@@ -100,8 +100,8 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/5_armies.7130ff05.png"
   },
   {
-    "revision": "c4dfe4f3abfcd99e6ab7",
-    "url": "/got-scoreboard/static/js/main.c4dfe4f3.chunk.js"
+    "revision": "702ed4f1f7b4ba51e754",
+    "url": "/got-scoreboard/static/js/main.702ed4f1.chunk.js"
   },
   {
     "revision": "d3b39a5c7e6b83d15f88edb2b9f02f48",
@@ -196,11 +196,11 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/valyrian-steel-blade-token.940de262.png"
   },
   {
-    "revision": "bc6459ce05fbde8414a1",
-    "url": "/got-scoreboard/static/css/1.2b1a5419.chunk.css"
+    "revision": "a95cf8e49736e8ca50ca",
+    "url": "/got-scoreboard/static/css/1.9413bafd.chunk.css"
   },
   {
-    "revision": "00b399cfbc543e19741c1026470706f7",
+    "revision": "5f6127a00891892b35a819688b779eb1",
     "url": "/got-scoreboard/index.html"
   }
 ];
