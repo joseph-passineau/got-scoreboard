@@ -3,6 +3,8 @@
 This is a scoreboard for the Game of Thrones board game.
 Built for the 2nd Edition with Mother of Dragons expansion.
 
+Try it out [Demo](https://joseph-passineau.github.io/got-scoreboard/)
+
 ## Built With
 
 * [React](https://github.com/facebook/create-react-app/) - JavaScript Framework
