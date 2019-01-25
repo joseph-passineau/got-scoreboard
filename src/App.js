@@ -35,6 +35,13 @@ class App extends PureComponent {
         this.closeResetModal();
     };
 
+    componentDidMount() {
+        window.addEventListener('beforeunload', ev => {
+            ev.preventDefault();
+            return (ev.returnValue = 'Changes you made may will be lost.');
+        });
+    }
+
     render() {
         const AppContainer = styled.main.attrs({
             className: 'flex'
@@ -73,12 +80,12 @@ class App extends PureComponent {
                 </Sidebar>
                 <Main>
                     <HousesList />
-                    <ResetModal
-                        isOpen={this.state.resetModalIsOpen}
-                        handleYes={this.handleResetGame}
-                        handleNo={this.closeResetModal}
-                    />
                 </Main>
+                <ResetModal
+                    isOpen={this.state.resetModalIsOpen}
+                    handleYes={this.handleResetGame}
+                    handleNo={this.closeResetModal}
+                />
             </AppContainer>
         );
     }

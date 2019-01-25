@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/6_armies.a78226ea.png"
   },
   {
-    "revision": "702ed4f1f7b4ba51e754",
+    "revision": "300e85a4b9160e68c18c",
     "url": "/got-scoreboard/static/css/main.5d744f8c.chunk.css"
   },
   {
@@ -100,8 +100,8 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/5_armies.7130ff05.png"
   },
   {
-    "revision": "702ed4f1f7b4ba51e754",
-    "url": "/got-scoreboard/static/js/main.702ed4f1.chunk.js"
+    "revision": "300e85a4b9160e68c18c",
+    "url": "/got-scoreboard/static/js/main.300e85a4.chunk.js"
   },
   {
     "revision": "d3b39a5c7e6b83d15f88edb2b9f02f48",
@@ -200,7 +200,7 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/css/1.9413bafd.chunk.css"
   },
   {
-    "revision": "5f6127a00891892b35a819688b779eb1",
+    "revision": "5ac5a4483837728afecdf43529ab3745",
     "url": "/got-scoreboard/index.html"
   }
 ];

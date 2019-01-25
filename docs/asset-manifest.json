@@ -1,7 +1,7 @@
 {
   "main.css": "/got-scoreboard/static/css/main.5d744f8c.chunk.css",
-  "main.js": "/got-scoreboard/static/js/main.702ed4f1.chunk.js",
-  "main.js.map": "/got-scoreboard/static/js/main.702ed4f1.chunk.js.map",
+  "main.js": "/got-scoreboard/static/js/main.300e85a4.chunk.js",
+  "main.js.map": "/got-scoreboard/static/js/main.300e85a4.chunk.js.map",
   "static/css/1.9413bafd.chunk.css": "/got-scoreboard/static/css/1.9413bafd.chunk.css",
   "static/js/1.a95cf8e4.chunk.js": "/got-scoreboard/static/js/1.a95cf8e4.chunk.js",
   "static/js/1.a95cf8e4.chunk.js.map": "/got-scoreboard/static/js/1.a95cf8e4.chunk.js.map",
@@ -52,9 +52,9 @@
   "static/media/tyrell_token.png": "/got-scoreboard/static/media/tyrell_token.488cb5f0.png",
   "static/media/valyrian-steel-blade-token.png": "/got-scoreboard/static/media/valyrian-steel-blade-token.940de262.png",
   "static/media/wildlings_track.png": "/got-scoreboard/static/media/wildlings_track.0676798f.png",
-  "static/css/1.9413bafd.chunk.css.map": "/got-scoreboard/static/css/1.9413bafd.chunk.css.map",
   "static/css/main.5d744f8c.chunk.css.map": "/got-scoreboard/static/css/main.5d744f8c.chunk.css.map",
+  "static/css/1.9413bafd.chunk.css.map": "/got-scoreboard/static/css/1.9413bafd.chunk.css.map",
   "index.html": "/got-scoreboard/index.html",
-  "precache-manifest.a7ef1ce31a55107c04e9338b0ea425e4.js": "/got-scoreboard/precache-manifest.a7ef1ce31a55107c04e9338b0ea425e4.js",
+  "precache-manifest.9eb0a37a490b153d0bd6592728575064.js": "/got-scoreboard/precache-manifest.9eb0a37a490b153d0bd6592728575064.js",
   "service-worker.js": "/got-scoreboard/service-worker.js"
 }
