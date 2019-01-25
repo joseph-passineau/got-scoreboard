@@ -8,6 +8,13 @@ Built for the 2nd Edition with Mother of Dragons expansion.
 * [React](https://github.com/facebook/create-react-app/) - JavaScript Framework
 * [Redux](https://github.com/reduxjs/react-redux) - Predictable state container
 
+## Installation
+* Clone the repository
+* Install the dependencies
+```npm install```
+* Start
+```npm start```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
