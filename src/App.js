@@ -6,6 +6,7 @@ import React, { PureComponent } from 'react';
 import Button from './components/Button';
 import GOTImg from './assets/images/got.png';
 import HousesList from './components/HousesList';
+import ResetModal from './components/ResetModal';
 import RoundCounter from './components/RoundCounter';
 import WildlingThreatCounter from './components/WildlingThreatCounter';
 import { connect } from 'react-redux';
@@ -13,8 +14,25 @@ import { resetGame } from './actions/game';
 import styled from 'styled-components';
 
 class App extends PureComponent {
+    constructor() {
+        super();
+
+        this.state = {
+            resetModalIsOpen: false
+        };
+    }
+
+    openResetModal = () => {
+        this.setState({ resetModalIsOpen: true });
+    };
+
+    closeResetModal = () => {
+        this.setState({ resetModalIsOpen: false });
+    };
+
     handleResetGame = () => {
         this.props.resetGame();
+        this.closeResetModal();
     };
 
     render() {
@@ -41,7 +59,7 @@ class App extends PureComponent {
                     <RoundCounter />
                     <WildlingThreatCounter />
                     <Button
-                        handleOnClick={this.handleResetGame}
+                        handleOnClick={this.openResetModal}
                         primaryColor="#0F4154"
                         secondaryColor="#B1D5F4"
                     >
@@ -55,6 +73,11 @@ class App extends PureComponent {
                 </Sidebar>
                 <Main>
                     <HousesList />
+                    <ResetModal
+                        isOpen={this.state.resetModalIsOpen}
+                        handleYes={this.handleResetGame}
+                        handleNo={this.closeResetModal}
+                    />
                 </Main>
             </AppContainer>
         );
