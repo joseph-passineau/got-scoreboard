@@ -98,7 +98,7 @@ const mapDispatchToProps = {
 
 const mapStateToProps = function(state, props) {
     return {
-        ironThroneInfluence: state.houses[props.id].influenceTrack.ironThrone
+        ironThroneInfluence: state.houses[props.id].influenceTracks.ironThrone
     };
 };
 

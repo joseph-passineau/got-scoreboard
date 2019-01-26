@@ -19,7 +19,7 @@ const initialState = [
         name: 'stark',
         supplies: 1,
         castles: 2,
-        influenceTrack: {
+        influenceTracks: {
             ironThrone: 3,
             fiefdoms: 5,
             kingsCourt: 2
@@ -30,7 +30,7 @@ const initialState = [
         name: 'lannister',
         supplies: 2,
         castles: 1,
-        influenceTrack: {
+        influenceTracks: {
             ironThrone: 2,
             fiefdoms: 7,
             kingsCourt: 1
@@ -41,7 +41,7 @@ const initialState = [
         name: 'greyjoy',
         supplies: 2,
         castles: 1,
-        influenceTrack: {
+        influenceTracks: {
             ironThrone: 5,
             fiefdoms: 1,
             kingsCourt: 7
@@ -52,7 +52,7 @@ const initialState = [
         name: 'martell',
         supplies: 2,
         castles: 1,
-        influenceTrack: {
+        influenceTracks: {
             ironThrone: 4,
             fiefdoms: 3,
             kingsCourt: 3
@@ -63,7 +63,7 @@ const initialState = [
         name: 'tyrell',
         supplies: 2,
         castles: 1,
-        influenceTrack: {
+        influenceTracks: {
             ironThrone: 6,
             fiefdoms: 2,
             kingsCourt: 4
@@ -74,7 +74,7 @@ const initialState = [
         name: 'baratheon',
         supplies: 2,
         castles: 1,
-        influenceTrack: {
+        influenceTracks: {
             ironThrone: 1,
             fiefdoms: 6,
             kingsCourt: 6
@@ -85,7 +85,7 @@ const initialState = [
         name: 'arryn',
         supplies: 1,
         castles: 2,
-        influenceTrack: {
+        influenceTracks: {
             ironThrone: 7,
             fiefdoms: 4,
             kingsCourt: 5
@@ -96,9 +96,9 @@ const initialState = [
         name: 'targaryen',
         supplies: 4,
         castles: 1,
-        influenceTrack: {
+        influenceTracks: {
             ironThrone: 8,
-            fiefdoms: 5,
+            fiefdoms: 8,
             kingsCourt: 8
         }
     }
@@ -167,9 +167,9 @@ export default function(state = initialState, action) {
                 }
                 return {
                     ...item,
-                    influenceTrack: {
-                        ...item.influenceTrack,
-                        ironThrone: state[id].influenceTrack.ironThrone + 1
+                    influenceTracks: {
+                        ...item.influenceTracks,
+                        ironThrone: state[id].influenceTracks.ironThrone + 1
                     }
                 };
             });
@@ -183,9 +183,9 @@ export default function(state = initialState, action) {
                 }
                 return {
                     ...item,
-                    influenceTrack: {
-                        ...item.influenceTrack,
-                        ironThrone: state[id].influenceTrack.ironThrone - 1
+                    influenceTracks: {
+                        ...item.influenceTracks,
+                        ironThrone: state[id].influenceTracks.ironThrone - 1
                     }
                 };
             });
@@ -199,9 +199,9 @@ export default function(state = initialState, action) {
                 }
                 return {
                     ...item,
-                    influenceTrack: {
-                        ...item.influenceTrack,
-                        fiefdoms: state[id].influenceTrack.fiefdoms + 1
+                    influenceTracks: {
+                        ...item.influenceTracks,
+                        fiefdoms: state[id].influenceTracks.fiefdoms + 1
                     }
                 };
             });
@@ -215,8 +215,8 @@ export default function(state = initialState, action) {
                 }
                 return {
                     ...item,
-                    influenceTrack: {
-                        ...item.influenceTrack,
+                    influenceTracks: {
+                        ...item.influenceTracks,
                         fiefdoms: state[id].influenceTrack.fiefdoms - 1
                     }
                 };
@@ -231,9 +231,9 @@ export default function(state = initialState, action) {
                 }
                 return {
                     ...item,
-                    influenceTrack: {
-                        ...item.influenceTrack,
-                        kingsCourt: state[id].influenceTrack.kingsCourt + 1
+                    influenceTracks: {
+                        ...item.influenceTracks,
+                        kingsCourt: state[id].influenceTracks.kingsCourt + 1
                     }
                 };
             });
@@ -247,9 +247,9 @@ export default function(state = initialState, action) {
                 }
                 return {
                     ...item,
-                    influenceTrack: {
-                        ...item.influenceTrack,
-                        kingsCourt: state[id].influenceTrack.kingsCourt - 1
+                    influenceTracks: {
+                        ...item.influenceTracks,
+                        kingsCourt: state[id].influenceTracks.kingsCourt - 1
                     }
                 };
             });

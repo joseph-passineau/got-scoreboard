@@ -1,11 +1,12 @@
 import './App.css';
 
-import Octicon, { Sync } from '@githubprimer/octicons-react';
+import Octicon, { Bookmark, Sync } from '@githubprimer/octicons-react';
 import React, { PureComponent } from 'react';
 
 import Button from './components/Button';
 import GOTImg from './assets/images/got.png';
 import HousesList from './components/HousesList';
+import InfluenceTrackModal from './components/InfluenceTrackModal';
 import ResetModal from './components/ResetModal';
 import RoundCounter from './components/RoundCounter';
 import WildlingThreatCounter from './components/WildlingThreatCounter';
@@ -18,7 +19,8 @@ class App extends PureComponent {
         super();
 
         this.state = {
-            resetModalIsOpen: false
+            resetModalIsOpen: false,
+            influenceTrackModalIsOpen: false
         };
     }
 
@@ -28,6 +30,14 @@ class App extends PureComponent {
 
     closeResetModal = () => {
         this.setState({ resetModalIsOpen: false });
+    };
+
+    openInfluenceTrackModal = () => {
+        this.setState({ influenceTrackModalIsOpen: true });
+    };
+
+    closeInfluenceTrackModal = () => {
+        this.setState({ influenceTrackModalIsOpen: false });
     };
 
     handleResetGame = () => {
@@ -65,6 +75,21 @@ class App extends PureComponent {
                     />
                     <RoundCounter />
                     <WildlingThreatCounter />
+                    <div className="mb4">
+                        <Button
+                            handleOnClick={this.openInfluenceTrackModal}
+                            primaryColor="#0F4154"
+                            secondaryColor="#B1D5F4"
+                        >
+                            <Octicon
+                                icon={Bookmark}
+                                size="medium"
+                                verticalAlign="middle"
+                            />{' '}
+                            Influence Track
+                        </Button>
+                    </div>
+
                     <Button
                         handleOnClick={this.openResetModal}
                         primaryColor="#0F4154"
@@ -85,6 +110,10 @@ class App extends PureComponent {
                     isOpen={this.state.resetModalIsOpen}
                     handleYes={this.handleResetGame}
                     handleNo={this.closeResetModal}
+                />
+                <InfluenceTrackModal
+                    isOpen={this.state.influenceTrackModalIsOpen}
+                    handleClose={this.closeInfluenceTrackModal}
                 />
             </AppContainer>
         );

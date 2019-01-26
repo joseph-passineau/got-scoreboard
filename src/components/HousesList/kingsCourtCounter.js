@@ -114,7 +114,7 @@ const mapDispatchToProps = {
 
 const mapStateToProps = function(state, props) {
     return {
-        kingsCourtInfluence: state.houses[props.id].influenceTrack.kingsCourt
+        kingsCourtInfluence: state.houses[props.id].influenceTracks.kingsCourt
     };
 };
 

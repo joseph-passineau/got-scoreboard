@@ -27,7 +27,7 @@ class WildlingThreatCounter extends React.PureComponent {
         const { wildlingThreat } = this.props;
 
         const Container = styled.div.attrs({
-            className: 'pv6 tc flex flex-column'
+            className: 'pv5 tc flex flex-column'
         })``;
 
         const RoundCountContainer = styled.div.attrs({

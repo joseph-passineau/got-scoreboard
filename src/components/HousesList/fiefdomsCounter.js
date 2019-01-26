@@ -94,7 +94,7 @@ const mapDispatchToProps = {
 
 const mapStateToProps = function(state, props) {
     return {
-        fiefdomsInfluence: state.houses[props.id].influenceTrack.fiefdoms
+        fiefdomsInfluence: state.houses[props.id].influenceTracks.fiefdoms
     };
 };
 
