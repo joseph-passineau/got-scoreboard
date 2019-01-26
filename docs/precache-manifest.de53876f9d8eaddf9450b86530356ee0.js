@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "a78226ea9661fd4b87f52d8e6c802640",
-    "url": "/got-scoreboard/static/media/6_armies.a78226ea.png"
+    "revision": "5aea8e6dab16cd0df92f3689353d26e4",
+    "url": "/got-scoreboard/static/media/4_armies.5aea8e6d.png"
   },
   {
-    "revision": "300e85a4b9160e68c18c",
-    "url": "/got-scoreboard/static/css/main.5d744f8c.chunk.css"
+    "revision": "f5aeeb4b067e2b6f072b",
+    "url": "/got-scoreboard/static/css/main.7f064513.chunk.css"
   },
   {
     "revision": "0676798f49b878a3759ba6d8402ff268",
     "url": "/got-scoreboard/static/media/wildlings_track.0676798f.png"
   },
   {
-    "revision": "a95cf8e49736e8ca50ca",
-    "url": "/got-scoreboard/static/js/1.a95cf8e4.chunk.js"
+    "revision": "e9adc5303ed8b4cccca7",
+    "url": "/got-scoreboard/static/js/1.e9adc530.chunk.js"
   },
   {
     "revision": "f733617affdb77426871",
@@ -60,6 +60,14 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/influence_targaryen_3stars.076490ab.png"
   },
   {
+    "revision": "9fad924bbec9085a28a5db3e7088bf1f",
+    "url": "/got-scoreboard/static/media/influence_tracks.9fad924b.png"
+  },
+  {
+    "revision": "f843a3e94c62223df2cccfb13d41eff3",
+    "url": "/got-scoreboard/static/media/influence_tracks_expansion.f843a3e9.png"
+  },
+  {
     "revision": "951b37e7b8b7b71ee709c3e120494f56",
     "url": "/got-scoreboard/static/media/round.951b37e7.png"
   },
@@ -92,16 +100,16 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/3_armies.1702c1b7.png"
   },
   {
-    "revision": "5aea8e6dab16cd0df92f3689353d26e4",
-    "url": "/got-scoreboard/static/media/4_armies.5aea8e6d.png"
+    "revision": "f5aeeb4b067e2b6f072b",
+    "url": "/got-scoreboard/static/js/main.f5aeeb4b.chunk.js"
   },
   {
     "revision": "7130ff05170dd33e1538053d14773097",
     "url": "/got-scoreboard/static/media/5_armies.7130ff05.png"
   },
   {
-    "revision": "300e85a4b9160e68c18c",
-    "url": "/got-scoreboard/static/js/main.300e85a4.chunk.js"
+    "revision": "a78226ea9661fd4b87f52d8e6c802640",
+    "url": "/got-scoreboard/static/media/6_armies.a78226ea.png"
   },
   {
     "revision": "d3b39a5c7e6b83d15f88edb2b9f02f48",
@@ -148,14 +156,6 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/house_tyrell.df512deb.png"
   },
   {
-    "revision": "9fad924bbec9085a28a5db3e7088bf1f",
-    "url": "/got-scoreboard/static/media/influence_track.9fad924b.png"
-  },
-  {
-    "revision": "f843a3e94c62223df2cccfb13d41eff3",
-    "url": "/got-scoreboard/static/media/influence_track_expansion.f843a3e9.png"
-  },
-  {
     "revision": "3aa3b7ad0f1d5221a8eb02364d68c9a6",
     "url": "/got-scoreboard/static/media/iron_throne_token.3aa3b7ad.png"
   },
@@ -196,11 +196,11 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/valyrian-steel-blade-token.940de262.png"
   },
   {
-    "revision": "a95cf8e49736e8ca50ca",
-    "url": "/got-scoreboard/static/css/1.9413bafd.chunk.css"
+    "revision": "e9adc5303ed8b4cccca7",
+    "url": "/got-scoreboard/static/css/1.a00aa624.chunk.css"
   },
   {
-    "revision": "5ac5a4483837728afecdf43529ab3745",
+    "revision": "8c3cf062eb8ce9c9fec2c516303f0eef",
     "url": "/got-scoreboard/index.html"
   }
 ];
