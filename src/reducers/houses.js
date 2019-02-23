@@ -217,7 +217,7 @@ export default function(state = initialState, action) {
                     ...item,
                     influenceTracks: {
                         ...item.influenceTracks,
-                        fiefdoms: state[id].influenceTrack.fiefdoms - 1
+                        fiefdoms: state[id].influenceTracks.fiefdoms - 1
                     }
                 };
             });
