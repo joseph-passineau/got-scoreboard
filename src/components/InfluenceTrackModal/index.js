@@ -1,7 +1,6 @@
 import Modal from 'react-modal';
 import PropTypes from 'prop-types';
 import React from 'react';
-import _ from 'lodash';
 import { connect } from 'react-redux';
 import constants from '../../constants';
 import influenceTracksExpansionImg from '../../assets/images/influence_tracks_expansion.png';
@@ -10,7 +9,7 @@ import styled from 'styled-components';
 
 class InfluenceTracksModal extends React.Component {
     render() {
-        const { isOpen, handleClose, houses } = this.props;
+        const { isOpen, handleClose, houses, tracks } = this.props;
         const images = require.context('../../assets/images', true);
 
         const Container = styled.div.attrs({
@@ -74,86 +73,76 @@ class InfluenceTracksModal extends React.Component {
                         src={influenceTracksExpansionImg}
                     />
                     <IronThroneTrack>
-                        {_.sortBy(houses, [
-                            function(house) {
-                                return house.influenceTracks.ironThrone;
-                            }
-                        ]).map((house, index) => {
-                            if (index < constants.MAX_INFLUENCE) {
-                                if (index === constants.MAX_INFLUENCE - 1) {
-                                    return (
-                                        <LastTokenImg
-                                            key={index}
-                                            src={images(
-                                                `./${house.name}_token.png`
-                                            )}
-                                            alt={house.name}
-                                        />
-                                    );
-                                } else {
-                                    return (
-                                        <HouseTokenImg
-                                            key={index}
-                                            src={images(
-                                                `./${house.name}_token.png`
-                                            )}
-                                            alt={house.name}
-                                        />
-                                    );
-                                }
+                        {tracks.ironThrone.map((houseId, index) => {
+                            if (index === constants.MAX_INFLUENCE - 1) {
+                                return (
+                                    <LastTokenImg
+                                        key={index}
+                                        src={images(
+                                            `./${
+                                                houses[houseId].name
+                                            }_token.png`
+                                        )}
+                                        alt={houses[houseId].name}
+                                    />
+                                );
                             } else {
-                                return '';
+                                return (
+                                    <HouseTokenImg
+                                        key={index}
+                                        src={images(
+                                            `./${
+                                                houses[houseId].name
+                                            }_token.png`
+                                        )}
+                                        alt={houses[houseId].name}
+                                    />
+                                );
                             }
                         })}
                     </IronThroneTrack>
                     <FiefdomsTrack>
-                        {_.sortBy(houses, [
-                            function(house) {
-                                return house.influenceTracks.fiefdoms;
-                            }
-                        ]).map((house, index) => {
-                            if (index < constants.MAX_INFLUENCE) {
-                                if (index === constants.MAX_INFLUENCE - 1) {
-                                    return (
-                                        <LastTokenImg
-                                            key={index}
-                                            src={images(
-                                                `./${house.name}_token.png`
-                                            )}
-                                            alt={house.name}
-                                        />
-                                    );
-                                } else {
-                                    return (
-                                        <HouseTokenImg
-                                            key={index}
-                                            src={images(
-                                                `./${house.name}_token.png`
-                                            )}
-                                            alt={house.name}
-                                        />
-                                    );
-                                }
+                        {tracks.fiefdoms.map((houseId, index) => {
+                            if (index === constants.MAX_INFLUENCE - 1) {
+                                return (
+                                    <LastTokenImg
+                                        key={index}
+                                        src={images(
+                                            `./${
+                                                houses[houseId].name
+                                            }_token.png`
+                                        )}
+                                        alt={houses[houseId].name}
+                                    />
+                                );
                             } else {
-                                return '';
+                                return (
+                                    <HouseTokenImg
+                                        key={index}
+                                        src={images(
+                                            `./${
+                                                houses[houseId].name
+                                            }_token.png`
+                                        )}
+                                        alt={houses[houseId].name}
+                                    />
+                                );
                             }
                         })}
                     </FiefdomsTrack>
                     <KingsCourtTrack>
-                        {_.sortBy(houses, [
-                            function(house) {
-                                return house.influenceTracks.kingsCourt;
-                            }
-                        ]).map((house, index) => {
+                        {tracks.kingsCourt.map((houseId, index) => {
                             if (index < constants.MAX_INFLUENCE) {
                                 if (index === constants.MAX_INFLUENCE - 1) {
                                     return (
                                         <LastTokenImg
                                             key={index}
                                             src={images(
-                                                `./${house.name}_token.png`
+                                                `./${
+                                                    houses[houseId].name
+                                                }_token.png`
                                             )}
-                                            alt={house.name}
+                                            alt={houses[houseId].name}
                                         />
                                     );
                                 } else {
@@ -161,9 +150,11 @@ class InfluenceTracksModal extends React.Component {
                                         <HouseTokenImg
                                             key={index}
                                             src={images(
-                                                `./${house.name}_token.png`
+                                                `./${
+                                                    houses[houseId].name
+                                                }_token.png`
                                             )}
-                                            alt={house.name}
+                                            alt={houses[houseId].name}
                                         />
                                     );
                                 }
@@ -185,7 +176,8 @@ InfluenceTracksModal.propTypes = {
 
 const mapStateToProps = function(state) {
     return {
-        houses: state.houses
+        houses: state.houses,
+        tracks: state.tracks
     };
 };
 
