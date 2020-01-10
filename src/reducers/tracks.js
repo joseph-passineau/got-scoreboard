@@ -5,8 +5,11 @@ import {
     INCREASE_FIEFDOMS,
     INCREASE_IRONTHRONE,
     INCREASE_KINGSCOURT
-} from '../actionTypes/track';
+} from '../actionTypes/house';
 
+import {
+    MOVE_IRONTHRONE
+} from '../actionTypes/track';
 import { RESET_GAME } from '../actionTypes/game';
 
 const initialState = {
@@ -23,7 +26,7 @@ const reorder = (list, from, to) => {
     return result;
 };
 
-export default function(state = initialState, action) {
+export default function (state = initialState, action) {
     switch (action.type) {
         case INCREASE_IRONTHRONE: {
             const { id } = action.payload;
@@ -41,6 +44,13 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 ironThrone: reorder(state.ironThrone, from, from - 1)
+            };
+        }
+        case MOVE_IRONTHRONE: {
+            const { source, destination } = action.payload;
+            return {
+                ...state,
+                ironThrone: reorder(state.ironThrone, source, destination)
             };
         }
         case INCREASE_FIEFDOMS: {

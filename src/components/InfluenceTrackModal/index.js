@@ -1,3 +1,5 @@
+import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
+
 import Modal from 'react-modal';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -5,9 +7,40 @@ import { connect } from 'react-redux';
 import constants from '../../constants';
 import influenceTracksExpansionImg from '../../assets/images/influence_tracks_expansion.png';
 import influenceTracksImg from '../../assets/images/influence_tracks.png';
+import { moveIronThrone } from '../../actions/track';
 import styled from 'styled-components';
 
+const getItemStyle = (isDragging, draggableStyle, index) => ({
+    // some basic styles to make the items look a bit nicer
+    userSelect: 'none',
+    margin: index === constants.MAX_INFLUENCE - 1 ? '0 0 0 120px' : `0 0 0 50px`,
+    // styles we need to apply on draggables
+    ...draggableStyle,
+});
+
+const getListStyle = isDraggingOver => ({
+    display: 'flex',
+    overflow: 'auto',
+    width: '1300px',
+});
+
 class InfluenceTracksModal extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.onDragEnd = this.onDragEnd.bind(this);
+    }
+
+    onDragEnd(result) {
+        // dropped outside the list
+        if (!result.destination) {
+            return;
+        }
+
+        this.props.moveIronThrone(result.source.index, result.destination.index);
+    }
+
     render() {
         const { isOpen, handleClose, houses, tracks } = this.props;
         const images = require.context('../../assets/images', true);
@@ -36,6 +69,7 @@ class InfluenceTracksModal extends React.Component {
             top: 48px;
             left: 192px;
         `;
+
 
         const FiefdomsTrack = styled.div.attrs({
             className: 'absolute'
@@ -73,33 +107,44 @@ class InfluenceTracksModal extends React.Component {
                         src={influenceTracksExpansionImg}
                     />
                     <IronThroneTrack>
-                        {tracks.ironThrone.map((houseId, index) => {
-                            if (index === constants.MAX_INFLUENCE - 1) {
-                                return (
-                                    <LastTokenImg
-                                        key={index}
-                                        src={images(
-                                            `./${
-                                                houses[houseId].name
-                                            }_token.png`
-                                        )}
-                                        alt={houses[houseId].name}
-                                    />
-                                );
-                            } else {
-                                return (
-                                    <HouseTokenImg
-                                        key={index}
-                                        src={images(
-                                            `./${
-                                                houses[houseId].name
-                                            }_token.png`
-                                        )}
-                                        alt={houses[houseId].name}
-                                    />
-                                );
-                            }
-                        })}
+                        <DragDropContext onDragEnd={this.onDragEnd}>
+                            <Droppable droppableId="droppable" direction="horizontal">
+                                {(provided, snapshot) => (
+                                    <div ref={provided.innerRef} style={getListStyle(snapshot.isDraggingOver)} {...provided.droppableProps}>
+                                        {tracks.ironThrone.map((houseId, index) => (
+                                            <Draggable key={houseId} draggableId={houseId.toString()} index={index}>
+                                                {(provided, snapshot) => (
+                                                    <div
+                                                        ref={provided.innerRef}
+                                                        {...provided.draggableProps}
+                                                        {...provided.dragHandleProps}
+                                                        style={getItemStyle(
+                                                            snapshot.isDragging,
+                                                            provided.draggableProps.style,
+                                                            index
+                                                        )}
+                                                    >
+                                                        {
+
+                                                        }
+                                                        <img
+                                                            key={index}
+                                                            src={images(
+                                                                `./${
+                                                                houses[houseId].name
+                                                                }_token.png`
+                                                            )}
+                                                            alt={houses[houseId].name}
+                                                        />
+
+                                                    </div>
+                                                )}
+                                            </Draggable>
+                                        ))}
+                                    </div>
+                                )}
+                            </Droppable>
+                        </DragDropContext>
                     </IronThroneTrack>
                     <FiefdomsTrack>
                         {tracks.fiefdoms.map((houseId, index) => {
@@ -109,7 +154,7 @@ class InfluenceTracksModal extends React.Component {
                                         key={index}
                                         src={images(
                                             `./${
-                                                houses[houseId].name
+                                            houses[houseId].name
                                             }_token.png`
                                         )}
                                         alt={houses[houseId].name}
@@ -121,7 +166,7 @@ class InfluenceTracksModal extends React.Component {
                                         key={index}
                                         src={images(
                                             `./${
-                                                houses[houseId].name
+                                            houses[houseId].name
                                             }_token.png`
                                         )}
                                         alt={houses[houseId].name}
@@ -139,7 +184,7 @@ class InfluenceTracksModal extends React.Component {
                                             key={index}
                                             src={images(
                                                 `./${
-                                                    houses[houseId].name
+                                                houses[houseId].name
                                                 }_token.png`
                                             )}
                                             alt={houses[houseId].name}
@@ -151,7 +196,7 @@ class InfluenceTracksModal extends React.Component {
                                             key={index}
                                             src={images(
                                                 `./${
-                                                    houses[houseId].name
+                                                houses[houseId].name
                                                 }_token.png`
                                             )}
                                             alt={houses[houseId].name}
@@ -174,11 +219,15 @@ InfluenceTracksModal.propTypes = {
     handleClose: PropTypes.func.isRequired
 };
 
-const mapStateToProps = function(state) {
+const mapDispatchToProps = {
+    moveIronThrone
+};
+
+const mapStateToProps = function (state) {
     return {
         houses: state.houses,
         tracks: state.tracks
     };
 };
 
-export default connect(mapStateToProps)(InfluenceTracksModal);
+export default connect(mapStateToProps, mapDispatchToProps)(InfluenceTracksModal);
