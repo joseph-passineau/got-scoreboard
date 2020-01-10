@@ -86,7 +86,7 @@ class App extends PureComponent {
                                 size="medium"
                                 verticalAlign="middle"
                             />{' '}
-                            Influence Track
+                            Tracks
                         </Button>
                     </div>
 

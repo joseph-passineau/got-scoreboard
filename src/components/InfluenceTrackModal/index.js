@@ -1,12 +1,15 @@
+import { moveFiefdoms, moveIronThrone, moveKingscourt } from '../../actions/track';
+
+import DraggableTrack from './draggableTrack';
 import Modal from 'react-modal';
 import PropTypes from 'prop-types';
 import React from 'react';
+import VictoryPlaceholder from './victoryPlaceholder';
 import { connect } from 'react-redux';
 import influenceTracksExpansionImg from '../../assets/images/influence_tracks_expansion.png';
 import influenceTracksImg from '../../assets/images/influence_tracks.png';
-import { moveIronThrone, moveFiefdoms, moveKingscourt } from '../../actions/track';
 import styled from 'styled-components';
-import DraggableTrack from './draggableTrack';
+import victoryTrackImg from '../../assets/images/victory_tracks.png';
 
 Modal.setAppElement('#root')
 
@@ -33,12 +36,16 @@ class InfluenceTracksModal extends React.Component {
         const Container = styled.div.attrs({
             className: 'relative'
         })`
-            height: 480px;
+            height: 710px;
             width: 100%;
         `;
 
         const InfluenceTracksImg = styled.img`
             height: 480px;
+        `;
+
+        const VictoryTrackImg = styled.img`
+            height: 230px;
         `;
 
         const InfluenceTracksExpansionImg = styled.img.attrs({
@@ -70,6 +77,19 @@ class InfluenceTracksModal extends React.Component {
             left: 192px;
         `;
 
+        const VictoryTrack = styled.div.attrs({
+            className: 'absolute'
+        })`
+            top: 508px;
+            left: 14px;
+            display: flex;
+        `;
+
+        const VictoryCastle = styled.div`
+            width: 123px;
+            margin-left:8px;
+        `;
+
         return (
             <Modal
                 isOpen={isOpen}
@@ -79,19 +99,34 @@ class InfluenceTracksModal extends React.Component {
                 shouldCloseOnOverlayClick={true}
             >
                 <Container>
-                    <InfluenceTracksImg src={influenceTracksImg} />
-                    <InfluenceTracksExpansionImg
-                        src={influenceTracksExpansionImg}
-                    />
-                    <IronThroneTrack>
-                        <DraggableTrack trackItems={tracks.ironThrone} houses={houses} handleMove={moveIronThrone} />
-                    </IronThroneTrack>
-                    <FiefdomsTrack>
-                        <DraggableTrack trackItems={tracks.fiefdoms} houses={houses} handleMove={moveFiefdoms} />
-                    </FiefdomsTrack>
-                    <KingsCourtTrack>
-                        <DraggableTrack trackItems={tracks.kingsCourt} houses={houses} handleMove={moveKingscourt} />
-                    </KingsCourtTrack>
+                    <div>
+                        <InfluenceTracksImg src={influenceTracksImg} />
+                        <InfluenceTracksExpansionImg
+                            src={influenceTracksExpansionImg}
+                        />
+                        <IronThroneTrack>
+                            <DraggableTrack trackItems={tracks.ironThrone} houses={houses} handleMove={moveIronThrone} />
+                        </IronThroneTrack>
+                        <FiefdomsTrack>
+                            <DraggableTrack trackItems={tracks.fiefdoms} houses={houses} handleMove={moveFiefdoms} />
+                        </FiefdomsTrack>
+                        <KingsCourtTrack>
+                            <DraggableTrack trackItems={tracks.kingsCourt} houses={houses} handleMove={moveKingscourt} />
+                        </KingsCourtTrack>
+                    </div>
+                    <div>
+                        <VictoryTrackImg src={victoryTrackImg} />
+                        <VictoryTrack>
+                            {
+                                Array.apply(null, new Array(7)).map((e, i) => (
+                                    <VictoryCastle key={i}>
+                                        <VictoryPlaceholder houses={houses} castles={i + 1} />
+                                    </VictoryCastle>
+                                ))
+                            }
+
+                        </VictoryTrack>
+                    </div>
                 </Container>
             </Modal>
         );
