@@ -1,87 +1,31 @@
-self.__precacheManifest = [
+self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5aea8e6dab16cd0df92f3689353d26e4",
-    "url": "/got-scoreboard/static/media/4_armies.5aea8e6d.png"
+    "revision": "4b4c52192b3fe9eb10c6234d7383ee19",
+    "url": "/got-scoreboard/index.html"
   },
   {
-    "revision": "88bcec6e5262aa997de7",
-    "url": "/got-scoreboard/static/css/main.7f064513.chunk.css"
+    "revision": "58e5996da7610c7ae8c0",
+    "url": "/got-scoreboard/static/css/2.77d96167.chunk.css"
   },
   {
-    "revision": "0676798f49b878a3759ba6d8402ff268",
-    "url": "/got-scoreboard/static/media/wildlings_track.0676798f.png"
+    "revision": "5412042f0debd2bbbd9f",
+    "url": "/got-scoreboard/static/css/main.e3da0486.chunk.css"
   },
   {
-    "revision": "e9adc5303ed8b4cccca7",
-    "url": "/got-scoreboard/static/js/1.e9adc530.chunk.js"
+    "revision": "58e5996da7610c7ae8c0",
+    "url": "/got-scoreboard/static/js/2.fd872ac7.chunk.js"
   },
   {
-    "revision": "f733617affdb77426871",
-    "url": "/got-scoreboard/static/js/runtime~main.f733617a.js"
+    "revision": "3a69d949060cecbe48a39bbe9d42b4b3",
+    "url": "/got-scoreboard/static/js/2.fd872ac7.chunk.js.LICENSE"
   },
   {
-    "revision": "ce4d393cb5932094d87b4de4016c2d03",
-    "url": "/got-scoreboard/static/media/influence.ce4d393c.png"
+    "revision": "5412042f0debd2bbbd9f",
+    "url": "/got-scoreboard/static/js/main.60aeb1ad.chunk.js"
   },
   {
-    "revision": "027b7bf20163129877e37dacdc465435",
-    "url": "/got-scoreboard/static/media/influence_targaryen.027b7bf2.png"
-  },
-  {
-    "revision": "0c407a57b178736ea6d156a48cf76c22",
-    "url": "/got-scoreboard/static/media/got.0c407a57.png"
-  },
-  {
-    "revision": "d035554c1b8488656654422c153a172f",
-    "url": "/got-scoreboard/static/media/castles.d035554c.png"
-  },
-  {
-    "revision": "716cbdc0a5b93d1b252934d4f96e88b7",
-    "url": "/got-scoreboard/static/media/castles_win.716cbdc0.png"
-  },
-  {
-    "revision": "940d492c572523e47251cbbaed46c4c8",
-    "url": "/got-scoreboard/static/media/game_round_marker.940d492c.png"
-  },
-  {
-    "revision": "bb5ff5b561c0eaea0f94380cc29626f0",
-    "url": "/got-scoreboard/static/media/influence_1stars.bb5ff5b5.png"
-  },
-  {
-    "revision": "8217db153f0e5d58ca0c4fc795082b6d",
-    "url": "/got-scoreboard/static/media/influence_2stars.8217db15.png"
-  },
-  {
-    "revision": "31340048c0ea4b22f5f522a046c031d9",
-    "url": "/got-scoreboard/static/media/influence_3stars.31340048.png"
-  },
-  {
-    "revision": "076490ab219fec703e0c2fb3399c45b1",
-    "url": "/got-scoreboard/static/media/influence_targaryen_3stars.076490ab.png"
-  },
-  {
-    "revision": "9fad924bbec9085a28a5db3e7088bf1f",
-    "url": "/got-scoreboard/static/media/influence_tracks.9fad924b.png"
-  },
-  {
-    "revision": "f843a3e94c62223df2cccfb13d41eff3",
-    "url": "/got-scoreboard/static/media/influence_tracks_expansion.f843a3e9.png"
-  },
-  {
-    "revision": "951b37e7b8b7b71ee709c3e120494f56",
-    "url": "/got-scoreboard/static/media/round.951b37e7.png"
-  },
-  {
-    "revision": "7792499131ab1057cb26be45f05abadb",
-    "url": "/got-scoreboard/static/media/supply_icon.77924991.png"
-  },
-  {
-    "revision": "1dc6a71887b057d16f56235e2b42ddb3",
-    "url": "/got-scoreboard/static/media/wildling.1dc6a718.png"
-  },
-  {
-    "revision": "caba7a563b2f9002558f7cb817ed3bce",
-    "url": "/got-scoreboard/static/media/Romic.caba7a56.ttf"
+    "revision": "cd2df166671e3b2e17e6",
+    "url": "/got-scoreboard/static/js/runtime-main.94f2db2f.js"
   },
   {
     "revision": "5ab44da4915c7bd66fa9ba9998b7a5a1",
@@ -100,8 +44,8 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/3_armies.1702c1b7.png"
   },
   {
-    "revision": "88bcec6e5262aa997de7",
-    "url": "/got-scoreboard/static/js/main.88bcec6e.chunk.js"
+    "revision": "5aea8e6dab16cd0df92f3689353d26e4",
+    "url": "/got-scoreboard/static/media/4_armies.5aea8e6d.png"
   },
   {
     "revision": "7130ff05170dd33e1538053d14773097",
@@ -112,12 +56,32 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/6_armies.a78226ea.png"
   },
   {
+    "revision": "caba7a563b2f9002558f7cb817ed3bce",
+    "url": "/got-scoreboard/static/media/Romic.caba7a56.ttf"
+  },
+  {
     "revision": "d3b39a5c7e6b83d15f88edb2b9f02f48",
     "url": "/got-scoreboard/static/media/arryn_token.d3b39a5c.png"
   },
   {
     "revision": "b0a42527d598ca07cf84b4a6879422e9",
     "url": "/got-scoreboard/static/media/baratheon_token.b0a42527.png"
+  },
+  {
+    "revision": "d035554c1b8488656654422c153a172f",
+    "url": "/got-scoreboard/static/media/castles.d035554c.png"
+  },
+  {
+    "revision": "716cbdc0a5b93d1b252934d4f96e88b7",
+    "url": "/got-scoreboard/static/media/castles_win.716cbdc0.png"
+  },
+  {
+    "revision": "940d492c572523e47251cbbaed46c4c8",
+    "url": "/got-scoreboard/static/media/game_round_marker.940d492c.png"
+  },
+  {
+    "revision": "0c407a57b178736ea6d156a48cf76c22",
+    "url": "/got-scoreboard/static/media/got.0c407a57.png"
   },
   {
     "revision": "2c8eb4857a9b14b958f85815637e901d",
@@ -156,6 +120,38 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/house_tyrell.df512deb.png"
   },
   {
+    "revision": "ce4d393cb5932094d87b4de4016c2d03",
+    "url": "/got-scoreboard/static/media/influence.ce4d393c.png"
+  },
+  {
+    "revision": "bb5ff5b561c0eaea0f94380cc29626f0",
+    "url": "/got-scoreboard/static/media/influence_1stars.bb5ff5b5.png"
+  },
+  {
+    "revision": "8217db153f0e5d58ca0c4fc795082b6d",
+    "url": "/got-scoreboard/static/media/influence_2stars.8217db15.png"
+  },
+  {
+    "revision": "31340048c0ea4b22f5f522a046c031d9",
+    "url": "/got-scoreboard/static/media/influence_3stars.31340048.png"
+  },
+  {
+    "revision": "027b7bf20163129877e37dacdc465435",
+    "url": "/got-scoreboard/static/media/influence_targaryen.027b7bf2.png"
+  },
+  {
+    "revision": "076490ab219fec703e0c2fb3399c45b1",
+    "url": "/got-scoreboard/static/media/influence_targaryen_3stars.076490ab.png"
+  },
+  {
+    "revision": "9fad924bbec9085a28a5db3e7088bf1f",
+    "url": "/got-scoreboard/static/media/influence_tracks.9fad924b.png"
+  },
+  {
+    "revision": "f843a3e94c62223df2cccfb13d41eff3",
+    "url": "/got-scoreboard/static/media/influence_tracks_expansion.f843a3e9.png"
+  },
+  {
     "revision": "3aa3b7ad0f1d5221a8eb02364d68c9a6",
     "url": "/got-scoreboard/static/media/iron_throne_token.3aa3b7ad.png"
   },
@@ -176,8 +172,16 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/round&victory_tracks.d1757522.png"
   },
   {
+    "revision": "951b37e7b8b7b71ee709c3e120494f56",
+    "url": "/got-scoreboard/static/media/round.951b37e7.png"
+  },
+  {
     "revision": "f36a0d6a625230f45b5b548e46ac28f7",
     "url": "/got-scoreboard/static/media/stark_token.f36a0d6a.png"
+  },
+  {
+    "revision": "7792499131ab1057cb26be45f05abadb",
+    "url": "/got-scoreboard/static/media/supply_icon.77924991.png"
   },
   {
     "revision": "f459b7f19b8bf12cf2a1b3a72dcc1416",
@@ -196,11 +200,11 @@ self.__precacheManifest = [
     "url": "/got-scoreboard/static/media/valyrian-steel-blade-token.940de262.png"
   },
   {
-    "revision": "e9adc5303ed8b4cccca7",
-    "url": "/got-scoreboard/static/css/1.a00aa624.chunk.css"
+    "revision": "1dc6a71887b057d16f56235e2b42ddb3",
+    "url": "/got-scoreboard/static/media/wildling.1dc6a718.png"
   },
   {
-    "revision": "56881d6c045ac7d0641f9c147426d683",
-    "url": "/got-scoreboard/index.html"
+    "revision": "0676798f49b878a3759ba6d8402ff268",
+    "url": "/got-scoreboard/static/media/wildlings_track.0676798f.png"
   }
-];
+]);
