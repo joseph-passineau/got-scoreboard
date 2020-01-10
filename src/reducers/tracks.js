@@ -8,7 +8,9 @@ import {
 } from '../actionTypes/house';
 
 import {
-    MOVE_IRONTHRONE
+    MOVE_IRONTHRONE,
+    MOVE_FIEFDOMS,
+    MOVE_KINGSCOURT
 } from '../actionTypes/track';
 import { RESET_GAME } from '../actionTypes/game';
 
@@ -71,6 +73,13 @@ export default function (state = initialState, action) {
                 fiefdoms: reorder(state.fiefdoms, from, from - 1)
             };
         }
+        case MOVE_FIEFDOMS: {
+            const { source, destination } = action.payload;
+            return {
+                ...state,
+                fiefdoms: reorder(state.fiefdoms, source, destination)
+            };
+        }
         case INCREASE_KINGSCOURT: {
             const { id } = action.payload;
             const from = state.kingsCourt.indexOf(id);
@@ -87,6 +96,13 @@ export default function (state = initialState, action) {
             return {
                 ...state,
                 kingsCourt: reorder(state.kingsCourt, from, from - 1)
+            };
+        }
+        case MOVE_KINGSCOURT: {
+            const { source, destination } = action.payload;
+            return {
+                ...state,
+                kingsCourt: reorder(state.kingsCourt, source, destination)
             };
         }
         case RESET_GAME:
