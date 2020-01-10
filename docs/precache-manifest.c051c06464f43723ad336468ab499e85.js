@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b4c52192b3fe9eb10c6234d7383ee19",
+    "revision": "1739737d3cddb78f73087f3b85d19d6d",
     "url": "/got-scoreboard/index.html"
   },
   {
-    "revision": "58e5996da7610c7ae8c0",
+    "revision": "b7ab604a0b105f357fee",
     "url": "/got-scoreboard/static/css/2.77d96167.chunk.css"
   },
   {
-    "revision": "5412042f0debd2bbbd9f",
-    "url": "/got-scoreboard/static/css/main.e3da0486.chunk.css"
+    "revision": "a8298f79daeadb116a64",
+    "url": "/got-scoreboard/static/css/main.16df1ecb.chunk.css"
   },
   {
-    "revision": "58e5996da7610c7ae8c0",
-    "url": "/got-scoreboard/static/js/2.fd872ac7.chunk.js"
+    "revision": "b7ab604a0b105f357fee",
+    "url": "/got-scoreboard/static/js/2.8097d794.chunk.js"
   },
   {
     "revision": "3a69d949060cecbe48a39bbe9d42b4b3",
-    "url": "/got-scoreboard/static/js/2.fd872ac7.chunk.js.LICENSE"
+    "url": "/got-scoreboard/static/js/2.8097d794.chunk.js.LICENSE"
   },
   {
-    "revision": "5412042f0debd2bbbd9f",
-    "url": "/got-scoreboard/static/js/main.60aeb1ad.chunk.js"
+    "revision": "a8298f79daeadb116a64",
+    "url": "/got-scoreboard/static/js/main.819c0901.chunk.js"
   },
   {
     "revision": "cd2df166671e3b2e17e6",
@@ -60,8 +60,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/got-scoreboard/static/media/Romic.caba7a56.ttf"
   },
   {
+    "revision": "5aeba3e53527933a53d22136c1f442de",
+    "url": "/got-scoreboard/static/media/arryn_power.5aeba3e5.png"
+  },
+  {
     "revision": "d3b39a5c7e6b83d15f88edb2b9f02f48",
     "url": "/got-scoreboard/static/media/arryn_token.d3b39a5c.png"
+  },
+  {
+    "revision": "eaf1895cb9fa00a086f1e3293bebf7ca",
+    "url": "/got-scoreboard/static/media/baratheon_power.eaf1895c.png"
   },
   {
     "revision": "b0a42527d598ca07cf84b4a6879422e9",
@@ -82,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0c407a57b178736ea6d156a48cf76c22",
     "url": "/got-scoreboard/static/media/got.0c407a57.png"
+  },
+  {
+    "revision": "c12e0fb9b5551897acb2d43e52843f7c",
+    "url": "/got-scoreboard/static/media/greyjoy_power.c12e0fb9.png"
   },
   {
     "revision": "2c8eb4857a9b14b958f85815637e901d",
@@ -156,8 +168,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/got-scoreboard/static/media/iron_throne_token.3aa3b7ad.png"
   },
   {
+    "revision": "625b3fd74a76b0c67d5e5991364cf54a",
+    "url": "/got-scoreboard/static/media/lannister_power.625b3fd7.png"
+  },
+  {
     "revision": "2b6f1825acbfdff77d9b68a1c88b16fa",
     "url": "/got-scoreboard/static/media/lannister_token.2b6f1825.png"
+  },
+  {
+    "revision": "84f9e24f2eaa4ac56b354bba7e2c0485",
+    "url": "/got-scoreboard/static/media/martell_power.84f9e24f.png"
   },
   {
     "revision": "44d14c2afac277309467694f4bc057ef",
@@ -176,6 +196,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/got-scoreboard/static/media/round.951b37e7.png"
   },
   {
+    "revision": "c06890725bbc2a5c725d16aa5d91b4f1",
+    "url": "/got-scoreboard/static/media/stark_power.c0689072.png"
+  },
+  {
     "revision": "f36a0d6a625230f45b5b548e46ac28f7",
     "url": "/got-scoreboard/static/media/stark_token.f36a0d6a.png"
   },
@@ -188,8 +212,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/got-scoreboard/static/media/supply_track.f459b7f1.png"
   },
   {
+    "revision": "7142072c4195a8dcdc2dfe4f8d9ec8a2",
+    "url": "/got-scoreboard/static/media/targaryen_power.7142072c.png"
+  },
+  {
     "revision": "69d89981220192b88984c8c02e3c021e",
     "url": "/got-scoreboard/static/media/targaryen_token.69d89981.png"
+  },
+  {
+    "revision": "e095693b678f5e1a82f6038ebb3638c5",
+    "url": "/got-scoreboard/static/media/tyrell_power.e095693b.png"
   },
   {
     "revision": "488cb5f0b7b4ff3e37249efaedd41d53",
@@ -198,6 +230,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "940de2623f4bdb89ffdb9a85f0b62811",
     "url": "/got-scoreboard/static/media/valyrian-steel-blade-token.940de262.png"
+  },
+  {
+    "revision": "73787a033d994d1fd01e6cdc680cc557",
+    "url": "/got-scoreboard/static/media/victory_tracks.73787a03.png"
   },
   {
     "revision": "1dc6a71887b057d16f56235e2b42ddb3",
